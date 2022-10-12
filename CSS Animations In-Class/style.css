@@ -1,0 +1,14 @@
+#div1{
+    background-color: teal;
+    animation: firstDiv;
+    animation-duration: 5s;
+    color: black;
+    width:10%;
+    border-radius:10px;
+}
+
+@keyframes firstDiv {
+    0%{background-color: yellow;}
+    50%{background-color : teal;}
+    100%{background-color: yellow;}
+}
