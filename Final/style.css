@@ -1,0 +1,272 @@
+body {
+font-family: 'Inter', sans-serif;
+margin: 0;
+padding: 0;
+}
+nav {
+position: fixed;
+top: 0;
+left: 0;
+width: 100%;
+background-color: navy;
+height: 7%;
+z-index: 10;
+}
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    font-size: 35px;
+    margin: 0;
+}
+nav a {
+display: block;
+padding: 15px;
+color: honeydew;
+text-decoration: none;
+}
+
+#title{
+color: honeydew;
+font-size: 50px;
+margin:0;
+}
+
+h2{
+    color: teal;
+    font-size: 30px;
+}
+p{
+    color: teal;
+    font-size: 20px
+}
+
+
+#contentContainer{
+    display:flex;
+    flex-direction: column;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    top: 20%;
+    height:80%;
+    background-color: honeydew;
+    border-radius: 15px;
+}
+.sectionTitle{
+  margin-top: 1%;
+text-align: center;
+    font-size: 30px;
+}
+#aboutContent{
+    display: flex;
+    justify-content: space-around;
+}
+#projectsContainer{
+    /* position: absolute; */
+    /* margin: 10%; */
+    width: 80%;
+    margin: 0px; 
+
+
+}
+
+
+#pictureContainer{
+    float: left;
+    height: 60%;
+}
+
+.picture{
+    height: 100%;
+}
+
+#aboutText{
+    font-size: 20px;
+    height: 80%;
+    width: 70%;
+    float: right;
+}
+
+section {
+padding: 20px;
+margin: 20px;
+background-color: honeydew;
+color: teal
+}
+#projects{
+    height: 30%;
+}
+.slideshow-container {
+position: relative;
+margin: auto;
+}
+.slideshow-image {
+display: none;
+text-align: center;
+}
+.slideshow-image img {
+width: 100%;
+height: auto;
+}
+.prev, .next {
+cursor: pointer;
+position: absolute;
+top: 50%;
+width: auto;
+padding: 10px;
+margin-top: -22px;
+color: navy;
+font-weight: bold;
+font-size: 18px;
+transition: 0.6s ease;
+border-radius: 0 3px 3px 0;
+user-select: none;
+}
+.prev{
+    float: left;
+}
+.next{
+    float: right;
+}
+.prev:hover, .next:hover {
+background-color: navy;
+color: honeydew;
+}
+.prev {
+left: 0;
+border-radius: 3px 0 0 3px;
+}
+.next {
+right: 0;
+border-radius: 0 3px 3px 0;
+}
+
+#emailInput{
+    border-color: teal;
+    width: 50%;
+    background-color: honeydew;
+    color: teal;
+    padding: 2%;
+    border-style: dashed;
+}
+#messageInput{
+    border-style: dashed;
+    border-color: teal;
+    background-color: honeydew;
+    width: 50%;
+    color: teal;
+    padding: 10%;
+}
+#nameInput{
+    border-style: dashed;
+    border-color: teal;
+    width: 50%;
+    background-color: honeydew;
+    color: teal;
+    padding: 2%;
+
+}
+
+#send{
+    border-style: dashed;
+    display: flex;
+    float: right;
+    bottom:20%;
+    width: 10%;
+    border-color:teal;
+    background-color: honeydew;
+    color: teal;
+}
+
+@media screen and (max-width: 660px){
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: navy;
+        height: 7%;
+        z-index: 10;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            font-size: 15px;
+            margin: 0;
+        }
+        nav a {
+        display: block;
+        padding: 10px;
+        color: honeydew;
+        text-decoration: none;
+        }
+        
+        #title{
+        color: honeydew;
+        font-size: 30px;
+        margin:0;
+        }
+        #pictureContainer{
+            float: left;
+            height: 25%;
+        }
+        
+        .picture{
+            height: 100%;
+        }
+        #aboutContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+}
+@media screen and  (max-width: 930px) and (min-width:660px){
+    nav {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        background-color: navy;
+        height: 7%;
+        z-index: 10;
+        }
+        nav ul {
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            padding: 0;
+            font-size: 20px;
+            margin: 0;
+        }
+        nav a {
+        display: block;
+        padding: 10px;
+        color: honeydew;
+        text-decoration: none;
+        }
+        
+        #title{
+        color: honeydew;
+        font-size: 40px;
+        margin:0;
+        }
+        #pictureContainer{
+            float: left;
+            height: 25%;
+        }
+        
+        .picture{
+            height: 100%;
+        }
+        #aboutContent{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+        }
+}

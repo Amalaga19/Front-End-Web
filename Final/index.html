@@ -1,0 +1,57 @@
+HTML:
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><h2 id = "title"> Andres Malaga</h2></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+  <section id="about">
+    <div class="sectionTitle"><h2>About</h2></div>
+    <div id="aboutContent">
+    <div id="pictureContainer"><img class="picture" src="picture.jpg" alt=""></div>
+    <div id="aboutText"><p>Hi! I'm Andres Malaga, an Interactive Media Arts student at NYU Shanghai (currently at NYU's New York City campus). I'm from Lima, Peru and have spent extended periods of time in Shanghai and NYC. I really like to play videogames, watch soccer (football) and baseball, and really like physical computing and digital fabrication, although I want to go into Computer Science in the future.</p></div>
+    </div>
+</section>
+  <section id="projects">
+    <div class="sectionTitle"><h2>Projects</h2></div>
+    <div class="slideshow-container">
+        <div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+        <div><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+    
+      <div class="slideshow-image">
+        <p>PROJECT 1 GOES HERE</p>
+      </div>
+      <div class="slideshow-image">
+        <p>PROJECT 2 GOES HERE</p>
+      </div>
+      <div class="slideshow-image">
+        <p>PROJECT 3 GOES HERE</p>
+      </div>
+    </div>
+  </section>
+  <section id="contact">
+    <div class="sectionTitle"><h2>Contact</h2></div>
+    <p>Email: andres.malaga@nyu.edu</p>
+    <div id="formContainer">
+        <div id="emailBox"> <input type="text" id="emailInput" placeholder="Type your email"></div>
+        <div id="nameBox"> <input type="text" id="nameInput" placeholder="Type your name"></div>
+        <div id="MessageBox"> <input type="text" id="messageInput" placeholder="Type your message"></div>
+    </div>
+    <div id="sendButton">
+        <button type="button" id="send">Send</button>
+        </div>
+  </section>
+</body>
+</html>
