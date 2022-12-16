@@ -2,6 +2,7 @@ body {
 font-family: 'Inter', sans-serif;
 margin: 0;
 padding: 0;
+background-color: teal;
 }
 nav {
 position: fixed;
@@ -54,7 +55,6 @@ p{
     top: 20%;
     height:80%;
     background-color: honeydew;
-    border-radius: 15px;
 }
 .sectionTitle{
   margin-top: 1%;
@@ -95,14 +95,17 @@ section {
 padding: 20px;
 margin: 20px;
 background-color: honeydew;
-color: teal
+color: teal;
+border-radius: 15px;
 }
 #projects{
     height: 30%;
 }
-.slideshow-container {
+#slideshow-container {
 position: relative;
 margin: auto;
+display: flex;
+justify-content: space-around;
 }
 .slideshow-image {
 display: none;
@@ -175,7 +178,7 @@ border-radius: 0 3px 3px 0;
     border-style: dashed;
     display: flex;
     float: right;
-    bottom:20%;
+    bottom: 30%;
     width: 10%;
     border-color:teal;
     background-color: honeydew;

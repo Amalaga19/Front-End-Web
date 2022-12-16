@@ -6,7 +6,7 @@ HTML:
   <title>My Portfolio</title>
   <link rel="stylesheet" type="text/css" href="style.css">
   <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
-  <script defer src="script.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
   <nav>
@@ -26,19 +26,10 @@ HTML:
 </section>
   <section id="projects">
     <div class="sectionTitle"><h2>Projects</h2></div>
-    <div class="slideshow-container">
-        <div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
-        <div><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
-    
-      <div class="slideshow-image">
-        <p>PROJECT 1 GOES HERE</p>
-      </div>
-      <div class="slideshow-image">
-        <p>PROJECT 2 GOES HERE</p>
-      </div>
-      <div class="slideshow-image">
-        <p>PROJECT 3 GOES HERE</p>
-      </div>
+    <div id="slideshow-container">
+      <div><a class="prev" onclick="plusSlides(-1)">&#10094;</a></div>
+            <div><a class="next" onclick="plusSlides(1)">&#10095;</a></div>
+        </div>
     </div>
   </section>
   <section id="contact">
