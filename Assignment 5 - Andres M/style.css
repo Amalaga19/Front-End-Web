@@ -1,0 +1,103 @@
+#topNavBarContainer{
+    display: flex;
+}
+body{
+    background-color: teal;
+    font-family:'Inter', sans-serif;
+    color: honeydew;
+    margin: 0;
+}
+.topNavItem{
+    float: left;
+    background-color: honeydew;
+    color: teal;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    width: 10%;
+    text-align: center;
+    text-decoration: underline;
+}
+#langUser{
+    float: right;
+    margin-left: 40%;
+    margin-right: 5%;
+    display: flex;
+    text-align: center;
+    flex-direction: row;
+}
+#language{
+    padding-right: 10%;
+    padding-top: 5%;
+}
+#user{
+    padding: 5%;
+}
+#searchBarContainer{
+    position: absolute;
+    top: 20%;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+#logo{
+    margin:20px;
+    text-align: center;
+}
+#location{
+    margin-top: 0;
+    margin-bottom: 0px;
+    padding: 10px;
+    text-align: center;
+    align-items: center;
+}
+#searchAndPost{
+    position: absolute;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    top:50%;
+    right: 15%;
+
+}
+
+#searchBar{
+    display: flex;
+    padding: 0%;
+    margin: 0%;
+    justify-content: center;
+}
+#searchInput{
+    box-sizing: border-box;
+    border: honeydew;
+    border-radius: 12px;
+    background-color: honeydew;
+    padding: 10px;
+    color: teal;
+}
+#newPost{
+    display: flex;
+    margin: 0%;
+}
+#placeText{
+    margin-bottom: 0px;
+}
+#locationText{
+    margin-top: 0px;
+}
+#bottomNavBarContainer{
+    display:flex ;
+    width: 50%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 0%;
+}
+#title{
+    font-size: 70px;
+}
+#bottomNavBarContainer a{
+    color:honeydew;
+}
+.topNavItem a{
+    color: teal;
+}
